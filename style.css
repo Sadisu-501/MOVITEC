@@ -9,7 +9,7 @@ body {
   font-family: poppins;
 }
 nav {
-  background-image: url(Reese_Moore_Photography-4415.png);
+  background-image: url(img/moore\ 3.png);
   height: 70vh;
   background-size: cover;
   display: flex;
@@ -159,22 +159,21 @@ span {
   transition-delay: 200ms;
 }
 .card-info {
-  padding-top: 1rem;
-  padding: 2rem;
+  padding: 1rem 0;
   margin-bottom: 2rem;
   margin: 0;
 }
-.card-info h1 .card-info span {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+.card-info span {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .card-info p {
-  text-align: justify;
-  /* line-height: 1.6; */
+  text-align: c;
+  line-height: 1.6;
   margin: 1rem 0;
   font-size: 0.95rem;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
   max-width: 220px;
   color: hsl(0, 100%, 50%);
 }
@@ -195,24 +194,15 @@ footer {
     #142626,
     #000403
   );
+  margin-bottom: 0;
 }
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem;
-}
-.footer-container-1 {
-  margin-bottom: 100px;
-  padding: 2rem;
-}
+
 .footer-container-1,
 .footer-container-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
 }
 .footer-container-1 h1 {
   color: white;
@@ -223,6 +213,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding-left: 2rem;
 }
 
 .input-icon-wrapper {
@@ -292,7 +283,6 @@ footer {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin-top: 2rem; */
   padding: 2rem;
 }
 
@@ -335,7 +325,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 0.8rem;
-  margin-bottom: 0.7rem;
   padding: 0.5rem;
   color: #fff;
   font-size: 0.8rem;
@@ -345,6 +334,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-bottom: 1rem;
 }
 hr {
   border: none;
@@ -393,8 +383,8 @@ hr {
     display: none;
   }
   nav {
-    margin: 0;
-    padding-top: 0;
+    padding-top: 0.2rem;
+    margin-bottom: 50px;
   }
 
   .nav-icons button {
@@ -404,14 +394,14 @@ hr {
   }
   .container {
     background-color: black;
-    padding: 0;
+
     margin-top: 1rem;
   }
   .menuBtn {
     display: block;
     font-size: 2rem;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 25px;
     color: slateblue;
   }
@@ -426,8 +416,12 @@ hr {
     width: 100%;
     height: 55vh;
     padding: 1rem;
+    z-index: 3;
   }
-
+  .center-text {
+    z-index: 2;
+    position: relative;
+  }
   .menu.close {
     display: none;
   }
@@ -477,6 +471,10 @@ hr {
 
 /* Responsive design for mobile devices */
 @media screen and (max-width: 480px) {
+  nav {
+    height: 50vh;
+    background-repeat: no-repeat;
+  }
   .container {
     padding: 0rem;
     margin: 0;
@@ -495,7 +493,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    padding: 4rem;
+    padding: 2rem;
   }
   .card-contents {
     margin: 2rem auto;
@@ -520,11 +518,10 @@ hr {
 
   .footer-logo-2 {
     margin-right: 100px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   hr {
     margin-top: 1rem;
-    border-style: double;
   }
   .last-contents {
     flex-direction: column;
