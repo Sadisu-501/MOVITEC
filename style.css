@@ -101,7 +101,6 @@ span {
   top: 190px;
   left: 0;
   margin-left: 7rem;
-
   cursor: pointer;
   display: flex;
   gap: 0.3rem;
@@ -159,7 +158,7 @@ span {
   transition-delay: 200ms;
 }
 .card-info {
-  padding: 1rem 0;
+  padding: 2rem;
   margin-bottom: 2rem;
   margin: 0;
 }
@@ -472,12 +471,18 @@ hr {
 /* Responsive design for mobile devices */
 @media screen and (max-width: 480px) {
   nav {
-    height: 50vh;
+    background-image: url(img/conf-5.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+  }
+  .center-text {
+    display: none;
   }
   .container {
-    padding: 0rem;
-    margin: 0;
+    width: 100%;
+
+    padding: 0 1rem;
+    margin: 0rem;
   }
   .nav-icons ion-icon {
     display: none;
